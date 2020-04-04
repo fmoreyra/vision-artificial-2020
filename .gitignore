@@ -2,3 +2,6 @@ venv/*
 13-03/*
 16-03/*
 .vscode/*
+!common/hoja.png
+!common/example_video.avi
+common/*
