@@ -4,4 +4,5 @@ venv/*
 .vscode/*
 !common/hoja.png
 !common/example_video.avi
-common/*
+common/*.png
+common/*.avi
