@@ -6,3 +6,4 @@ venv/*
 !example_video.avi
 *.png
 *.avi
+.idea/
