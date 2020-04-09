@@ -14,7 +14,8 @@ while(cap.isOpened()):
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     cv2.imshow('frame', gray)
-    if((cv2.waitKey(cv2.CAP_PROP_FPS)&0xFF) == ord('q')):
+    fps = int(cap.get(cv2.CAP_PROP_FPS))
+    if((cv2.waitKey(fps)&0xFF) == ord('q')):
         break
 
 cap.release()
