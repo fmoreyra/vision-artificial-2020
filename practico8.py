@@ -77,5 +77,12 @@ while (True):
     k = cv2.waitKey(1) & 0xFF
     if k == 27 or k == ord('q'):
         break
+    elif k == ord('r'):
+        cv2.destroyWindow("final image")
+        cv2.destroyWindow("background image")
+        background_image = cv2.imread('common/Lionel_Messi.jpg')
+        cv2.imshow('background image', background_image)
+        cv2.setMouseCallback('background image', draw)
+        count = 0
 
 cv2.destroyAllWindows()
