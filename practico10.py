@@ -37,7 +37,7 @@ box = cv2.boxPoints(reference_rect)
 box = np.array(box, dtype="int")
 (tl, tr, br, bl) = perspective.order_points(box)
 dist_in_pixel = euclidean(tl, tr)
-dist_in_cm = 3
+dist_in_cm = 10
 pixel_per_cm = dist_in_pixel / dist_in_cm
 
 for contour in largest_contours_from_filtered_image:
